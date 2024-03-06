@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Auto Max Quality",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+        "resources": ["pageScript.js"],
+        "matches": ["*://www.youtube.com/*"]
+    }
+]
+
+}
